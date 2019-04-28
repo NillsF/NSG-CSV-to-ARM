@@ -1,0 +1,5 @@
+Network rules,direction,Rule Priority,Rule_Name,Access,Protocol,Source,Destination,port,Description
+private,inbound,100,deny_Telnet-23,deny,*,*,*,23,Block telnet
+private,inbound,101,allow_ssh,allow,*,*,*,22,Allow SSH
+private,inbound,4000,deny_rdp,allow,*,*,*,3389,No outbound internet
+public,inbound,4096,deny_all,deny,*,*,*,*,Foundation
